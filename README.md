@@ -3,4 +3,4 @@
 - Requirement
     - JDk 8 or above
     - maven 
-    - Angular CLI        
+    - dependncies in pom file       
