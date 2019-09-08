@@ -1,6 +1,7 @@
 package shivaot.booking;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,8 +23,8 @@ public class ViewController {
     public String index(Model model){
 
         model.addAttribute("datetime",new Date());
-        model.addAttribute("username","Shiva Tiwari");
-        model.addAttribute("mode","production");
+        model.addAttribute("username","Shiva");
+        model.addAttribute("mode",appMode);
 
         return "index";
     }
